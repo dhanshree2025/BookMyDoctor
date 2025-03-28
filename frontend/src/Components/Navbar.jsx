@@ -10,8 +10,8 @@ const Navbar = () => {
   const [token, setToken] = useState(true)
 
   return (
-    <div className='flex justify-between items-center text-sm  border-b border-green-600'>
-      <img className='w-40 h-40' src={assets.logo} alt="" />
+    <div className='h-24 flex justify-between items-center text-sm  border-b border-green-600'>
+      <img className='w-32 h-32' src={assets.logo} alt="" />
       <ul className='hidden md:flex items:start gap-16 font-bold'>
        <NavLink to='/'>
         <li>HOME</li>
@@ -37,10 +37,10 @@ const Navbar = () => {
       {
         token
         ? <div className='flex gap-6 items-center cursor-pointer group relative'>
-          <img className='w-20 rounded-full' src={assets.profile_pic} alt="" />
-          <img className='w-5' src={assets.dropdown_icon} alt="" />
+          <img className='w-16 rounded-full' src={assets.profile_pic} alt="" />
+          <img className='w-3' src={assets.dropdown_icon} alt="" />
           <div className='absolute top-0 right-0 pt-32 text-base font-medium text-gray-600 z-20 hidden group-hover:block '>
-            <div className='bg-gray-200 min-w-44 p-8 rounded flex-colnp-8'>
+            <div className='bg-gray-200 min-w-44 p-8 rounded flex-col'>
               <p onClick={()=>navigate('my-profile')} className='hover:text-black cursor-pointer'>MyProfile</p>
               <p onClick={()=>navigate('my-appointments')} className='pt-4 hover:text-black cursor-pointer'>MyAppointments</p>
               <p onClick={()=>setToken(false)} className='pt-4 hover:text-black cursor-pointer'>Logout</p>
