@@ -18,7 +18,7 @@ const TopDoctors = () => {
                     <div className=' text-base text-center text-green-600 gap-2 items-center flex'>
                         <p className='w-3 h-3 text-lg bg-green-600 rounded-full'></p><p>Available</p>
                     </div>
-                        <p className='text-2xl font-medium text-gray-800'>{item.name}</p>
+                        <p className='text-xl font-medium text-gray-800'>{item.name}</p>
                         <p className='text-lg text-gray-700'>{item.speciality}</p>
                     </div>
             </div>
