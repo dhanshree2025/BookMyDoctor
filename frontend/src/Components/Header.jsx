@@ -2,7 +2,7 @@ import React from 'react'
 import {assets} from '../assets/assets'
 const Header = () => {
   return (
-    <div className='bg-green-600 pt-20 w-full md:px-10 lg:px-20 flex flex-col flex-wrap md:flex-row mt-32'>
+    <div className='bg-green-400 pt-20 w-full md:px-10 lg:px-20 flex flex-col flex-wrap md:flex-row mt-32'>
         {/*--------Left side---------*/}
         <div className='md:w-1/2 flex flex-col items-start justify-center gap-4 py-10 m-auto md:py-[10vw] md:mb-[30px]'>
              <p className='w-96 text-2xl md:text-3xl lg:text-6xl text-white font-semibold leading-tight md:lead lg:leading-tight'>Book Appointments With Trusted Doctors</p>
