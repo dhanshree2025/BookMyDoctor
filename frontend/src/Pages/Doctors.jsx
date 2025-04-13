@@ -40,7 +40,7 @@ const Doctors = () => {
           <div className='grid grid-cols-1 sm:grid-cols-5 w-full gap-4 pt-6 gap-y-7 px-3 sm:px-0'>
             {
               filterDoc.map((item, index) => (
-                <div onClick={()=>navigate(`./Appointment/${item._id}`)} className='border border-green-600 rounded-xl overflow-hidden cursor-pointer hover:-translate-y-2 transition-all duration-500' key={index}>
+                <div onClick={()=>navigate(`/Appointment/${item._id}`)} className='border border-green-600 rounded-xl overflow-hidden cursor-pointer hover:-translate-y-2 transition-all duration-500' key={index}>
                     <img className='bg-green-100' src={item.image} alt={item.name} />
                     <div className='p-4'>
                         <div className=' text-base text-center text-green-600 gap-2 items-center flex'>
