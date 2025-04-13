@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
 
             {/*-------------Middle Side--------------*/}
-            <div className='pt-12'>
+            <div className='pt-12 ml-6'>
                 <p className='text-xl font-medium mb-6'>COMPANY</p>
                 <ul className='flex flex-col gap-2 text-gray-500'>
                     <li>Home</li>
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
 
             {/*-------------Right Side--------------*/}
-            <div  className='pt-10'>
+            <div  className='pt-10 ml-6'>
                 <p className='text-xl font-medium mb-6'>GET IN TOUCH</p>
                 <ul className='flex flex-col gap-2 text-gray-500'>
                     <li>+91-123-456-7890</li>

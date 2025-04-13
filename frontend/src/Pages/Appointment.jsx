@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { AppContext } from '../Context/AppContext'
 import { assets } from '../assets/assets'
+import RelatedDoctors from '../Components/RelatedDoctors'
 
 const Appointment = () => {
 
@@ -74,9 +75,9 @@ const Appointment = () => {
     }, [docSlots])
 
     return docInfo && (
-        <div className='mt-32 ml-32 mr-32'>
+        <div className='mt-32 ml-8 mr-2'>
             {/*-------------------Doctor's details-----------------------*/}
-            <div className='flex flex-col sm:flex-row gap-14'>
+            <div className='flex flex-col sm:flex-row gap-4'>
                 <div>
                     <img className='bg-green-400 w-full sm:max-w-72 rounded-lg' src={docInfo.image} alt="" />
                 </div>
@@ -97,7 +98,7 @@ const Appointment = () => {
 
             </div>
             {/*-----------------------Booking Slots-------------------------*/}
-            <div className='sm:ml-80 sm:pl-4 mt-4 font-medium  text-gray-700'>
+            <div className='sm:ml-72 sm:pl-4 mt-4 font-medium  text-gray-700'>
               <p>Booking Slots</p>
               <div className='flex gap-3 items-center w-full overflow-x-scroll mt-4'>
                 {
@@ -116,6 +117,8 @@ const Appointment = () => {
               </div>
               <button className='bg-green-400 text-white text-sm font-light px-14 py-3 rounded-full my-6'>Book an Appointment</button>
             </div>
+            {/*---------------------------Listing Related Doctors---------------------------*/}
+            <RelatedDoctors docId={docId} speciality={docInfo.speciality}/>
         </div>
     )
 }
